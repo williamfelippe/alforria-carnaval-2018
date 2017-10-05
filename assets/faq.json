@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "title": "Como faço para comprar meu pacote pelo cartão de crédito?",
+      "answer": "Clique no link Comprar no menu principal do site. Escolha o seu pacote e siga as instruções do Pagseguro ou do Paypal. Após realizada a compra, solicite, preencha e envie a ficha de cadastro preenchida para o e-mail da República Alforria."
+    },
+    {
+      "title": "Como faço para comprar meu pacote por depósito bancário?",
+      "answer": "Envie um e-mail para a República Alforria solicitando sua ficha de cadastro ou baixe a mesma no site, preencha e envie de volta informando em quantas vezes deseja dividir o pacote. O responsável entrará em contato informando os procedimentos necessários para a conclusão da compra."
+    },
+    {
+      "title": "Meu pagamento via cartão de crédito não foi aprovado. O que faço?",
+      "answer": "Quando o pagamento não é aprovado, você deve verificar com o seu banco ou diretamente com o Pagseguro ou Paypal motivo da não aprovação. Também pode ser algum problema com o limite do seu cartão."
+    },
+    {
+      "title": "Como funciona o pacote simples?",
+      "answer": "O pacote simples é constituído de tudo que consta na programação e a hospedagem acontece em casas de apoio."
+    },
+    {
+      "title": "Como funciona o pacote luxo?",
+      "answer": "O pacote luxo é constituído de tudo que consta na programação e a hospedagem acontece no Hotel Mirante, um hotel ao lado da república, com piscina, área de jogos, sauna e muito mais."
+    },
+    {
+      "title": "Como são as casas de apoio?",
+      "answer": "As casas de apoio são casas alugadas pela república, onde são retirados todos os móveis. Sendo assim todos os cômodos (exceto cozinha e banheiro) podem ser usados para hospedagem."
+    },
+    {
+      "title": "A Alforria fica longe dos blocos?",
+      "answer": "Não. Ficamos entre o centro histórico e a parte nova da cidade. Todos os ônibus passam em frente a nossa casa. Caso não queira gastar nada, pode ir a pé também. 15 minutos de caminhada são suficientes para chegar até o lugar onde os blocos acontecem."
+    },
+    {
+      "title": "Como funciona o esquema de alimentação?",
+      "answer": "A Alforria contrata um restaurante para disponibilizar as comidas para os foliões. O restaurante segue todas as normas exigidas pela saúde pública e a comida é cuidadosamente escolhida pelos alforrianos."
+    },
+    {
+      "title": "Temos direito a quarto individual?",
+      "answer": "Não. A República Alforria não trabalha com quartos individuais, mas você será alocado(a) na mesma casa de apoio que as pessoas do seu grupo."
+    },
+    {
+      "title": "Como funciona o parcelamento?",
+      "answer": "O pagamento é parcelado de acordo com a quantidade de meses que faltam até o carnaval. Ex: Estando em novembro, você terá no máximo 3 meses para pagar (nov, dez, e jan). Os dias de pagamento são 5, 10, 15, 20, 25 de cada mês. No cartão o pagamento pode ser feito em até 18X (dependendo do cartão) e contêm juros de 5% mais porcentagem da operadora de cartão (depende da operadora)."
+    },
+    {
+      "title": "Como funciona o acesso a república?",
+      "answer": "Ao chegar na República Alforria, você assinará um contrato com seus direitos e deveres e receberá o seu kit contendo: camisa da república; caneca; pulseira de acesso a república e casas de apoio; abadá, pulseiras e cartões de acesso aos blocos. Os moradores da república levarão vocês até suas respectivas casas de apoio. Com a pulseira da república vocês têm acesso a própria república e a todas as suas casas de apoio."
+    },
+    {
+      "title": "Realizei minha compra usando o cartão de crédito. Devo enviar minha ficha de cadastro mesmo assim?",
+      "answer": "Sim. Após realizar a compra mande um e-mail para republicaalforria@gmail.com e solicite sua ficha de cadastro. Realize o download, preencha e envie novamente para o e-mail da República Alforria. Sem a ficha de cadastro não confirmaremos a compra."
+    }
+  ]
+}

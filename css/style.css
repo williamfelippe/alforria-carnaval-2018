@@ -1,0 +1,404 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+h1 {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    text-align: center;
+
+    margin: 80px 0 20px;
+}
+
+li {
+    list-style: circle inside;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: transparent;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    padding: 20px 0 0;
+    width: 100%;
+
+    transition: ease-in-out all 0.3s;
+}
+
+@media all and (min-width: 768px) {
+    .header {
+        padding: 20px 0;
+    }
+}
+
+.header.header__solid {
+    background-color: #7b47ac;
+    transition: ease-in-out all 0.3s;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 20px 20px;
+}
+
+@media all and (min-width: 768px) {
+    .menu li {
+        margin: 0 20px;
+    }
+}
+
+.menu li a {
+    font-weight: 700;
+    text-decoration: none;
+
+    color: #fff;
+}
+
+.menu li a:hover,
+.menu li.active a,
+.menu li.active a:hover {
+    color: #f9d500;
+}
+
+main {
+    flex: 1 0 auto;
+    padding-bottom: 100px;
+}
+
+.banner {
+    background-color: #000;
+}
+
+.banner .logo {
+    position: absolute;
+    z-index: 2;
+    width: 400px;
+    top: 50%;
+    margin-top: -120px;
+    margin-left: -10px;
+}
+
+@media all and (min-width: 768px) {
+    .banner .logo {
+        position: absolute;
+        z-index: 2;
+
+        width: 600px;
+
+        top: 50%;
+        left: 50%;
+
+        margin-top: -150px;
+        margin-left: -300px;
+    }
+}
+
+.banner .headline {
+    position: absolute;
+
+    bottom: 60px;
+    left: 0;
+
+    width: 100%;
+
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #ffe34c;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about {
+    font-size: 20px;
+    padding: 60px 0 40px;
+}
+
+@media all and (min-width: 768px) {
+    .about {
+        padding: 100px 0 40px;
+    }
+}
+
+.about .about__item {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+@media all and (min-width: 768px) {
+    .about .about__item {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+}
+
+.blocks {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.packs {
+    margin-top: 30px;
+}
+
+.packs .packs__divider {
+    color: #404040;
+    font-size: 90px;
+    font-weight: 300;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.packs .packs__card {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+
+    margin-top: 40px;
+}
+
+.packs .packs__card .packs__title {
+    font-weight: 700;
+}
+
+.packs .packs__button {
+    color: #f9d500;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    margin: 50px auto 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+}
+
+.packs .packs__button:hover {
+    color: #ffb100;
+    transition: 0.3s;
+
+    text-decoration: none;
+}
+
+.packs .packs__subtitle {
+    margin: 60px 0 40px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.packs .packs__procedures {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+
+    padding: 0;
+}
+
+.packs .packs__procedures .packs__procedures__item {
+    margin-bottom: 20px;
+}
+
+.faq {
+    color: #333;
+    margin-top: 100px;
+}
+
+.faq .faq__card {
+    margin: 0 10px;
+
+    background-color: transparent;
+    color: #fff;
+
+    position: relative;
+}
+
+.faq .faq__card:before {
+    position: absolute;
+    top: 0;
+    right: 15px;
+
+    content: "";
+
+    width: 30%;
+    height: 2px;
+
+    background-color: #f9d500;
+}
+
+.faq .faq__card .faq__card__title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-align: right;
+
+    margin-bottom: 25px;
+}
+
+.faq .faq__card .faq__card__text {
+    font-weight: 300;
+    text-align: justify;
+}
+
+.contactForm {
+
+}
+
+.contactForm .contactForm__label {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
+
+    color: #f9d500;
+}
+
+.contactForm .contactForm__input,
+.contactForm .contactForm__textarea {
+    margin-bottom: 30px;
+
+    transition: all 0.30s ease-in-out;
+
+    outline: none;
+    padding: 5px 0 5px 5px;
+    border: 1px solid #ddd;
+
+    background-color: transparent;
+    color: #fff;
+}
+
+.contactForm .contactForm__input {
+    height: 40px;
+}
+
+.contactForm .contactForm__textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contactForm .contactForm__input:focus,
+.contactForm .contactForm__textarea:focus {
+    border-color: #f9d500;
+    box-shadow: 0 0 0 3px rgba(249, 213, 0, 0.25);
+}
+
+.blocks .blocks__button,
+.contactForm .contactForm__button {
+    background-color: #7b47ac;
+    color: #fff;
+    border-radius: 5px;
+
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+
+    cursor: pointer;
+
+    padding: 15px 40px;
+    margin: 20px 0;
+    display: inline-block;
+
+    border: none;
+    transition: 0.3s;
+}
+
+.blocks .blocks__button:hover,
+.contactForm .contactForm__button:hover {
+    background-color: #5e2a91;
+    transition: 0.3s;
+
+    text-decoration: none;
+}
+
+.footer {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+
+    padding: 50px 0 0;
+
+    color: #fff;
+
+    border-top: #2c2029 solid thin;
+}
+
+.footer .footer__top {
+    padding: 40px 0;
+}
+
+.footer .footer__top ul {
+    list-style: none;
+    text-align: center;
+
+    margin: 40px 0 0;
+    padding: 0;
+}
+
+.footer .footer__top ul li {
+    display: inline-block;
+    font-size: 25px;
+}
+
+.footer .footer__top ul li:not(:first-child) {
+    margin-left: 20px;
+}
+
+.footer .footer__top ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.footer .footer__top .footer__top__socialMedia {
+    color: #f9d500;
+    transition: 0.3s;
+}
+
+.footer .footer__top .footer__top__socialMedia:hover {
+    color: #7b47ac;
+    transition: 0.3s;
+}
+
+.footer .footer__bottom {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.footer .footer__bottom .footer__bottom__address {
+    margin-bottom: 40px;
+}
+
+.footer .footer__bottom .footer__bottom__address .footer__bottom__address__copyright {
+    color: #f9d500;
+}
+
+.footer .footer__bottom .logo {
+    width: 300px;
+}
