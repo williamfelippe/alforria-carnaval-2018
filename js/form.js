@@ -27,24 +27,28 @@ $(function () {
         var subject = values[2].value;
         var message = values[3].value;
 
-        var button = $(this).find("button");
-        var loader = $(this).find(".loader");
+        var button = $(this).find(".contactForm__button");
+        var sendText = $(this).find(".contactForm__button__sendText");
+        var loader = $(this).find(".contactForm__button__loader");
 
-        button.addClass("hidden-xs-up");
-        loader.removeClass("hidden-xs-up");
+        sendText.addClass("d-none");
+        loader.removeClass("d-none");
+        button.prop('disabled', true);
 
         $.post("php/send-email.php", {name: name, email: email, subject: subject, message: message},
             function (data, status) {
-                button.removeClass("hidden-xs-up");
-                loader.addClass("hidden-xs-up");
+                sendText.removeClass("d-none");
+                loader.addClass("d-none");
+                button.prop('disabled', false);
 
                 $('.contactForm')[0].reset();
 
-                toastr.success('Mensagem enviada com sucesso', 'Uhull!!!');
+                toastr.success('Mensagem enviada com sucesso', 'Yeah!!!');
             })
             .fail(function () {
-                button.removeClass("hidden-xs-up");
-                loader.addClass("hidden-xs-up");
+                sendText.removeClass("d-none");
+                loader.addClass("d-none");
+                button.prop('disabled', false);
 
                 toastr.error('Aconteceu um erro inesperado. Tente novamente mais tarde!', 'Ops...');
             });
