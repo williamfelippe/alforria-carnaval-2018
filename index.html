@@ -19,9 +19,34 @@
     <link rel="stylesheet" href="css/owl-carousel/owl.theme.css">
     <link rel="stylesheet" href="css/toastr.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="images/favicon/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="images/favicon/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="images/favicon/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16.png">
+    <link rel="apple-touch-icon" href="images/favicon/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="img/favicon/favicon-144.png">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
 </head>
 
 <body>
+
+<div id="preloader" class="preloader">
+    <i id="status" class="preloader__loader" data-feather="loader"></i>
+</div>
 
 <header class="header">
     <div class="container">
@@ -49,7 +74,8 @@
                      alt="Logo do Carnaval 2018"/>
 
                 <div class="headline">
-                    Viva essa nova experiência
+                    Viva essa nova experiência<br/>
+                    <i class="headline__arrow" data-feather="chevron-down"></i>
                 </div>
             </div>
         </div>
@@ -119,7 +145,7 @@
             <div class="row blocks">
                 <div class="col-12 order-2 col-md-6 order-md-1">
                     <p>
-                        O maior Bloco Universitário do Brasil acontece no Domingo de Carnaval em Ouro Preto/MG,
+                        O um dos maiores blocos universitários do Brasil acontece no domingo de carnaval,
                         arrastando multidões para enlouquecer ao lado do Camarão Doido!
                     </p>
 
@@ -150,11 +176,6 @@
                 </div>
 
                 <div class="col-12 col-md-6">
-                    <p>
-                        O seu carnaval não poderia acabar sem ter a sensação de ter ido na melhor festa de sua vida!
-
-                    </p>
-
                     <p>
                         Dois dos melhores Carnavais de Ouro Preto se juntaram para oferecer a festa mais animada de uma
                         terça a tarde que essa cidade já viu! Imagina uma micareta com mais de mil pessoas, 4
@@ -205,9 +226,9 @@
                 <div class="col-12 col-md-4">
                     <div class="card packs__card float-md-right">
                         <div class="card-body">
-                            <h4 class="card-title packs__title">
+                            <h3 class="card-title packs__title">
                                 Pacote Feminino
-                            </h4>
+                            </h3>
 
                             <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
                             <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post"
@@ -227,9 +248,9 @@
                 <div class="col-12 col-md-4">
                     <div class="card packs__card float-md-left">
                         <div class="card-body">
-                            <h4 class="card-title packs__title">
+                            <h3 class="card-title packs__title">
                                 Pacote Masculino
-                            </h4>
+                            </h3>
 
                             <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
                             <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post"
@@ -312,31 +333,37 @@
                     <form method="post" action="" class="contactForm">
                         <div class="form-group">
                             <label class="contactForm__label" for="name">Nome*</label>
-                            <input id="name" class="form-control contactForm__input" aria-describedby="nameHelp"
+                            <input id="name" name="name" class="form-control contactForm__input"
+                                   aria-describedby="nameHelp"
                                    required>
                         </div>
 
                         <div class="form-group">
                             <label class="contactForm__label" for="email">E-mail*</label>
-                            <input id="email" class="form-control contactForm__input" aria-describedby="emailHelp"
+                            <input id="email" name="email" class="form-control contactForm__input"
+                                   aria-describedby="emailHelp"
                                    required>
                         </div>
 
                         <div class="form-group">
                             <label class="contactForm__label" for="subject">Assunto*</label>
-                            <input id="subject" class="form-control contactForm__input" aria-describedby="subjectHelp"
+                            <input id="subject" name="subject" class="form-control contactForm__input"
+                                   aria-describedby="subjectHelp"
                                    required>
                         </div>
 
                         <div class="form-group">
                             <label class="contactForm__label" for="message">Mensagem*</label>
-                            <textarea class="form-control contactForm__textarea" id="message" rows="3"
+                            <textarea id="message" name="message" class="form-control contactForm__textarea" rows="3"
                                       required></textarea>
                         </div>
 
                         <div class="col-xs-12">
                             <button class="contactForm__button" type="submit">
-                                <span>Enviar</span>
+                                <span class="contactForm__button__sendText">
+                                    Enviar
+                                </span>
+                                <i class="contactForm__button__loader d-none" data-feather="loader"></i>
                             </button>
                         </div>
                     </form>
@@ -351,23 +378,25 @@
         <div class="row footer__top">
             <div class="col-12">
                 <p>
-                    Rua Pandiá Calógeras, 352 - Barra. Ouro Preto/MG <br> (31) 3552-5510
+                    Rua Campus Universitário, 19 - Campus Universitário. Ouro Preto/MG<br>
+                    (31) 3552-5510
                 </p>
             </div>
             <div class="col-12">
                 <ul>
                     <li>
-                        <a href="#" class="footer__top__socialMedia">
+                        <a href="https://www.facebook.com/republicaalforria/" target="_blank"
+                           class="footer__top__socialMedia">
                             <i data-feather="facebook"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="footer__top__socialMedia">
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__top__socialMedia">
                             <i data-feather="instagram"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="footer__top__socialMedia">
+                        <a href="mailto:republicaalforria@gmail.com" class="footer__top__socialMedia">
                             <i data-feather="mail"></i>
                         </a>
                     </li>
@@ -404,10 +433,13 @@
 <script src="js/faq.js"></script>
 <script>
     feather.replace();
+    particlesJS.load('particles-js', 'assets/particles.json');
 
-    particlesJS.load('particles-js', 'assets/particles.json', function () {
-        console.log('callback - particles.js config loaded');
-    });
+    $(window).on('load', function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow': 'visible'});
+    })
 </script>
 </body>
 
