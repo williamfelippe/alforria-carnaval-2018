@@ -27,7 +27,7 @@ body {
     background-color: #000;
     color: #fff;
 
-    overflow: hidden;
+    overflow-x: hidden !important;
 }
 
 h1 {
@@ -83,7 +83,13 @@ li {
 
 .menu li {
     display: inline-block;
-    margin: 0 20px 20px;
+    margin: 0 10px 20px;
+}
+
+@media all and (min-width: 360px) and (max-width: 768px) {
+    .menu li {
+        margin: 0 20px 20px;
+    }
 }
 
 @media all and (min-width: 768px) {
@@ -117,20 +123,34 @@ main {
 .banner .logo {
     position: absolute;
     z-index: 2;
-    width: 400px;
     top: 50%;
+
+    width: 400px;
+
     margin-top: -120px;
     margin-left: -10px;
 }
 
+@media all and (orientation: landscape) and (min-width: 320px) and (max-width: 580px) {
+    .banner .logo {
+        width: 300px;
+        left: 50%;
+        margin-top: -56px;
+        margin-left: -150px;
+    }
+}
+
+@media all and (min-width: 580px) and (max-width: 768px) {
+    .banner .logo {
+        left: 50%;
+        margin-left: -200px;
+    }
+}
+
 @media all and (min-width: 768px) {
     .banner .logo {
-        position: absolute;
-        z-index: 2;
-
         width: 600px;
 
-        top: 50%;
         left: 50%;
 
         margin-top: -150px;
@@ -141,7 +161,7 @@ main {
 .banner .headline {
     position: absolute;
 
-    bottom: 60px;
+    bottom: 0;
     left: 0;
 
     width: 100%;
@@ -161,6 +181,12 @@ main {
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
+}
+
+@media all and (orientation: landscape) and (min-width: 320px) and (max-width: 580px) {
+    .banner .headline .headline__arrow {
+        margin-top: 10px;
+    }
 }
 
 .about {
